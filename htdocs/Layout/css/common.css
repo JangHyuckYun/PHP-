@@ -1,0 +1,13 @@
+/* setting */
+/*html,body{ overflow:hidden; }*/
+*{ margin:0; padding:0; list-style: none; text-decoration: none; box-sizing: border-box; outline-style: none; /*cursor: none;*/}
+a{ color:inherit; }
+input{ border:0; background:transparent; }
+button{ border:0; background: transparent; }
+.flex{ display: flex; }
+.grid{ display: grid; }
+/*.pointer{ position: absolute; left:50%; top:50%; transform: translate(-50%,-50%); pointer-events: none; background:rgba(0,0,0,0.5); width: 20px; height: 20px; border-radius: 50%; }*/
+/* container */
+.w1000{ margin:0 auto; width: 1000px; height: 100%; }
+.w900{ margin:0 auto; width: 900px; height:100%; }
+

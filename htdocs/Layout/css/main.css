@@ -1,0 +1,13 @@
+/* body */
+body{ background:#f9f9f9; }
+
+/* header */
+header{ position: relative; width: 100%; height: 70px; }
+header .container{ position: fixed; width: 100%; height: 70px; background:#fff; border-bottom:1px solid lightgray;}
+
+header .w1000 .menu{ margin-left: auto;}
+header .w1000 .menu li{ color:#fff; }
+
+/* section */
+section{ flex-direction: column; justify-content: center; padding-top:60px;}
+section article{ width:700px; height: 500px; border:1px solid black; margin-bottom:60px; }

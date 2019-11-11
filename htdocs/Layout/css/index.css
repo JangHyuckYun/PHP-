@@ -1,0 +1,41 @@
+/* main */
+main{  display: flex; justify-content: center; align-items: center; height: 100vh; background:url("../images/main2.png") no-repeat; background-size:cover; }
+main .container{ width:400px; height:auto; background:#fff; border-radius: 20px;  user-select: none;}
+/* login-form */
+main .container .login-form{  padding:25px 50px; text-align: center; }
+main .container .login-form .title{ margin-bottom:30px; }
+main .container .login-form form p { position: relative; }
+main .container .login-form form p .linear::before{ display: block; position: absolute; bottom:0; width: 100%; height: 2px; background:#c5c5c5; content: ""; }
+main .container .login-form form p .linear::after{ display: block; position: absolute; left:50%; bottom:0; width: 0%; height: 2px; background:#c5c5c5; content: ""; z-index: 1; transition:0.5s;}
+main .container .login-form form input{ width: 100%; height: 70px; color:#7b7575; }
+main .container .login-form form input::placeholder{ color:#b5b5b5; }
+main .container .login-form form p:nth-last-child(2){ margin-bottom:25px; }
+main .container .login-form form input:not([type="submit"]):not([type="button"]){padding:20px 5px 0;}
+main .container .login-form form .login-btn{ padding:0 10px; }
+main .container .login-form form .login-btn .btn{  position: relative; width: 50%; height: 40px;  background:#66ddeb; box-shadow: 3px 3px 5px skyblue; transition: 0.5s;   border-radius: 10px; color:#fff; font-weight: bold; line-height: 40px; font-size: 12px;}
+main .container .login-form form .login-btn .btn:last-child{ margin-left:10px; }
+/* form input hover */
+
+main .container .login-form form p input:hover+.linear::after,
+main .container .login-form form p input:focus+.linear::after{ background:black; width: 100%; left:0;  }
+/* form btn hover */
+main .container .login-form form .login-btn .btn:hover,
+main .container .login-form form .login-btn .btn:focus{ letter-spacing: 3.25px; background:#339ca8; }
+/* or login with text */
+main .container .login-form .link-login-text{ color:#7b7575; margin-top:40px; font-size:12px; }
+/* link-login */
+main .container .login-form .link-login{ justify-content: center; margin-top:15px;}
+main .container .login-form .link-login li{ width: 30px; height: 30px; }
+main .container .login-form .link-login li a{color:#fff; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; border-radius: 50%; transition: 0.2s;}
+main .container .login-form .link-login li:nth-child(1) a{ background:#3b5998; }
+main .container .login-form .link-login li:nth-child(2) a{ background:#dd4b38; }
+main .container .login-form .link-login li:nth-child(3) a{ background:#00acee; }
+main .container .login-form .link-login li:not(:last-child){ margin-right:10px; }
+/* link-login form hover */
+main .container .login-form .link-login li a:focus,
+main .container .login-form .link-login li a:hover{ transform: scale(1.2); box-shadow: 2px 2px 2px gray; }
+/* guest-login */
+main .container .login-form .guest-login{ position: relative; margin-top:50px; font-size:14px; color:#7b7575;  }
+main .container .login-form .guest-login a{ font-weight: bold; transition: 0.5s; }
+main .container .login-form .guest-login a:focus,
+main .container .login-form .guest-login a:hover{ color:#df6003; letter-spacing: 1.25px;}
